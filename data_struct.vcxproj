@@ -95,6 +95,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <Profile>true</Profile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -110,6 +111,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <Profile>true</Profile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -156,12 +158,14 @@
     <ClCompile Include="LinkList_Test.cpp" />
     <ClCompile Include="SqList.cpp" />
     <ClCompile Include="SqList_Test.cpp" />
+    <ClCompile Include="StaticLinkList.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="LinkList.h" />
     <ClInclude Include="LinkList_Test.h" />
     <ClInclude Include="SqList.h" />
     <ClInclude Include="SqList_Test.h" />
+    <ClInclude Include="StaticLinkList.h" />
     <ClInclude Include="Status.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

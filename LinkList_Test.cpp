@@ -44,3 +44,54 @@ void test_InsList_v_0_0_0() {
 	assert(linklist.head->next->next == NULL);
 	
 }
+
+// 删除第一个节点
+void test_DelList_l_v_0_0_0() {
+	LinkList linklist;
+	assert(InitList_l(linklist) == OK);
+	Link link_1, link_2, link_3;
+	assert(MakeNode(link_1, 0) == OK);
+	assert(MakeNode(link_2, 1) == OK);
+	assert(MakeNode(link_3, 2) == OK);
+	assert(InsFirst_l(linklist.head, link_1) == OK);
+	assert(InsFirst_l(linklist.head, link_2) == OK);
+	assert(InsFirst_l(linklist.head, link_3) == OK);
+	//Format_l(linklist);
+	Link s;
+
+	assert(DelFirst_l(linklist.head, s) == OK);
+	assert(s->data == 2);
+	assert(s->next == NULL);
+}
+
+// 向指定位置插入_正常
+void test_InsertList_l_v_0_0_0() {
+	LinkList linklist;
+	assert(InitList_l(linklist) == OK);
+
+	for (int i = 0; i < 10; i++) {
+		InsertList_l(linklist, i, i);
+	}
+
+	//Format_l(linklist);
+
+	assert(linklist.length = 10);
+	
+}
+
+// 将线性表置为空表，并释放原链表的节点空间
+void test_ClearList_l_v_0_0_0() {
+	LinkList linklist;
+	assert(InitList_l(linklist) == OK);
+
+	for (int i = 0; i < 10; i++) {
+		InsertList_l(linklist, i, i);
+	}
+
+	ClearList_l(linklist);
+	Format_l(linklist);
+
+	assert(linklist.head == NULL);
+	assert(linklist.tail == NULL);
+	assert(linklist.length == 0);
+}

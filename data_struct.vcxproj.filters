@@ -30,6 +30,9 @@
     <ClCompile Include="LinkList_Test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="StaticLinkList.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SqList.h">
@@ -45,6 +48,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Status.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticLinkList.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

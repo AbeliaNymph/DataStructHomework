@@ -31,7 +31,9 @@ int main() {
 	test_Free_v_0_0_0();
 	test_InitLinkList_v_0_0_0();
 	test_InsList_v_0_0_0();
-	
+	test_DelList_l_v_0_0_0();
+	test_InsertList_l_v_0_0_0();
+	test_ClearList_l_v_0_0_0();
 #pragma endregion
 
 	return 0;
